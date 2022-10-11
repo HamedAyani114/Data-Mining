@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>KNN &#8212; Irham Hamed Ayani</title>
+    <title>UTS (KNN DecisionTree using dataset Breast Cancer Coimbra) &#8212; Irham Hamed Ayani</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -145,7 +145,9 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   KNN
+   <strong>
+    UTS (KNN DecisionTree using dataset Breast Cancer Coimbra)
+   </strong>
   </a>
  </li>
 </ul>
@@ -354,16 +356,14 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#knn">
    KNN
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#decision-tree">
-   <strong>
-    Decision Tree
-   </strong>
+   Decision Tree
   </a>
  </li>
 </ul>
@@ -375,7 +375,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>KNN</h1>
+                <h1>UTS (KNN DecisionTree using dataset Breast Cancer Coimbra)</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -385,16 +385,14 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#knn">
    KNN
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#decision-tree">
-   <strong>
-    Decision Tree
-   </strong>
+   Decision Tree
   </a>
  </li>
 </ul>
@@ -407,8 +405,10 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="knn">
-<h1>KNN<a class="headerlink" href="#knn" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="uts-knn-decisiontree-using-dataset-breast-cancer-coimbra">
+<h1><strong>UTS (KNN DecisionTree using dataset Breast Cancer Coimbra)</strong><a class="headerlink" href="#uts-knn-decisiontree-using-dataset-breast-cancer-coimbra" title="Permalink to this headline">#</a></h1>
+<section id="knn">
+<h2>KNN<a class="headerlink" href="#knn" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -434,7 +434,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-3c5045ff-8563-4252-8ec0-ffa6eaacb6d3">
+  <div id="df-3b73597b-e007-46f6-9dad-85f3696a1e23">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -614,7 +614,7 @@ title="Print to PDF"
 </table>
 <p>116 rows × 10 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-3c5045ff-8563-4252-8ec0-ffa6eaacb6d3')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-3b73597b-e007-46f6-9dad-85f3696a1e23')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -665,12 +665,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-3c5045ff-8563-4252-8ec0-ffa6eaacb6d3 button.colab-df-convert');
+          document.querySelector('#df-3b73597b-e007-46f6-9dad-85f3696a1e23 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-3c5045ff-8563-4252-8ec0-ffa6eaacb6d3');
+          const element = document.querySelector('#df-3b73597b-e007-46f6-9dad-85f3696a1e23');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -716,7 +716,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-65897c9c-df7e-4d6b-b3e4-148def5f388e">
+  <div id="df-771a473a-0930-41bb-861d-34850b038ea2">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -811,7 +811,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-65897c9c-df7e-4d6b-b3e4-148def5f388e')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-771a473a-0930-41bb-861d-34850b038ea2')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -862,12 +862,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-65897c9c-df7e-4d6b-b3e4-148def5f388e button.colab-df-convert');
+          document.querySelector('#df-771a473a-0930-41bb-861d-34850b038ea2 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-65897c9c-df7e-4d6b-b3e4-148def5f388e');
+          const element = document.querySelector('#df-771a473a-0930-41bb-861d-34850b038ea2');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -968,8 +968,8 @@ title="Print to PDF"
 </div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="decision-tree">
-<h1><strong>Decision Tree</strong><a class="headerlink" href="#decision-tree" title="Permalink to this headline">#</a></h1>
+<section id="decision-tree">
+<h2>Decision Tree<a class="headerlink" href="#decision-tree" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
@@ -1135,7 +1135,7 @@ weighted avg       0.90      0.88      0.87        24
  Text(0.95, 0.25, &#39;gini = 0.48\nsamples = 5\nvalue = [3, 2]&#39;)]
 </pre></div>
 </div>
-<img alt="_images/UTS_20_1.png" src="_images/UTS_20_1.png" />
+<img alt="_images/UTS_21_1.png" src="_images/UTS_21_1.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1168,9 +1168,10 @@ weighted avg       0.90      0.88      0.87        24
  Text(0.9230769230769231, 0.25, &#39;entropy = 0.0\nsamples = 7\nvalue = [0, 7]&#39;)]
 </pre></div>
 </div>
-<img alt="_images/UTS_21_1.png" src="_images/UTS_21_1.png" />
+<img alt="_images/UTS_22_1.png" src="_images/UTS_22_1.png" />
 </div>
 </div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
