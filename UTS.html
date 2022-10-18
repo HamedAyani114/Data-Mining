@@ -134,8 +134,8 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="tugas5.html">
-   Tugas 5 (Clustering Iris Data Using K Mean Clustering)
+  <a class="reference internal" href="tugas5fix.html">
+   Tugas 5 (K-Means Clustering)
   </a>
  </li>
  <li class="toctree-l1">
@@ -417,6 +417,7 @@ title="Print to PDF"
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
 <span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">tree</span>
 <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
 </pre></div>
@@ -432,7 +433,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-93a52d19-0692-48c0-a2d2-a9946bf1d657">
+  <div id="df-bac751e8-e75e-4cd1-a2fb-2e45a21d7489">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -612,7 +613,7 @@ title="Print to PDF"
 </table>
 <p>116 rows × 10 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-93a52d19-0692-48c0-a2d2-a9946bf1d657')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-bac751e8-e75e-4cd1-a2fb-2e45a21d7489')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -663,12 +664,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-93a52d19-0692-48c0-a2d2-a9946bf1d657 button.colab-df-convert');
+          document.querySelector('#df-bac751e8-e75e-4cd1-a2fb-2e45a21d7489 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-93a52d19-0692-48c0-a2d2-a9946bf1d657');
+          const element = document.querySelector('#df-bac751e8-e75e-4cd1-a2fb-2e45a21d7489');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -714,7 +715,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-17f17bab-0471-41c5-9664-2e7e6d62263c">
+  <div id="df-1e492731-3d25-42e3-8c6b-092e4423a579">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -809,7 +810,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-17f17bab-0471-41c5-9664-2e7e6d62263c')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-1e492731-3d25-42e3-8c6b-092e4423a579')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -860,12 +861,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-17f17bab-0471-41c5-9664-2e7e6d62263c button.colab-df-convert');
+          document.querySelector('#df-1e492731-3d25-42e3-8c6b-092e4423a579 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-17f17bab-0471-41c5-9664-2e7e6d62263c');
+          const element = document.querySelector('#df-1e492731-3d25-42e3-8c6b-092e4423a579');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});

@@ -1,0 +1,53 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/jupyter_cache/executors/utils.py", line 56, in single_nb_execution
+    record_timing=False,
+  File "/usr/local/lib/python3.7/dist-packages/nbclient/client.py", line 1204, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/usr/local/lib/python3.7/dist-packages/nbclient/util.py", line 84, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/usr/local/lib/python3.7/dist-packages/nbclient/util.py", line 62, in just_run
+    return loop.run_until_complete(coro)
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 587, in run_until_complete
+    return future.result()
+  File "/usr/local/lib/python3.7/dist-packages/nbclient/client.py", line 664, in async_execute
+    cell, index, execution_count=self.code_cells_executed + 1
+  File "/usr/local/lib/python3.7/dist-packages/nbclient/client.py", line 965, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/usr/local/lib/python3.7/dist-packages/nbclient/client.py", line 862, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+df_new=pd.concat(rata_rata_overdue_df, df)
+df_new
+------------------
+
+[0;31m[0m
+[0;31mTypeError[0mTraceback (most recent call last)
+[0;32m<ipython-input-7-d45fe0d0abe0>[0m in [0;36m<module>[0;34m[0m
+[0;32m----> 1[0;31m [0mdf_new[0m[0;34m=[0m[0mpd[0m[0;34m.[0m[0mconcat[0m[0;34m([0m[0mrata_rata_overdue_df[0m[0;34m,[0m [0mdf[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      2[0m [0mdf_new[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/lib/python3.7/dist-packages/pandas/util/_decorators.py[0m in [0;36mwrapper[0;34m(*args, **kwargs)[0m
+[1;32m    309[0m                     [0mstacklevel[0m[0;34m=[0m[0mstacklevel[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    310[0m                 )
+[0;32m--> 311[0;31m             [0;32mreturn[0m [0mfunc[0m[0;34m([0m[0;34m*[0m[0margs[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    312[0m [0;34m[0m[0m
+[1;32m    313[0m         [0;32mreturn[0m [0mwrapper[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/lib/python3.7/dist-packages/pandas/core/reshape/concat.py[0m in [0;36mconcat[0;34m(objs, axis, join, ignore_index, keys, levels, names, verify_integrity, sort, copy)[0m
+[1;32m    302[0m         [0mverify_integrity[0m[0;34m=[0m[0mverify_integrity[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    303[0m         [0mcopy[0m[0;34m=[0m[0mcopy[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 304[0;31m         [0msort[0m[0;34m=[0m[0msort[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    305[0m     )
+[1;32m    306[0m [0;34m[0m[0m
+
+[0;32m/usr/local/lib/python3.7/dist-packages/pandas/core/reshape/concat.py[0m in [0;36m__init__[0;34m(self, objs, axis, join, keys, levels, names, ignore_index, verify_integrity, copy, sort)[0m
+[1;32m    328[0m         [0;32mif[0m [0misinstance[0m[0;34m([0m[0mobjs[0m[0;34m,[0m [0;34m([0m[0mABCSeries[0m[0;34m,[0m [0mABCDataFrame[0m[0;34m,[0m [0mstr[0m[0;34m)[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    329[0m             raise TypeError(
+[0;32m--> 330[0;31m                 [0;34m"first argument must be an iterable of pandas "[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    331[0m                 [0;34mf'objects, you passed an object of type "{type(objs).__name__}"'[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    332[0m             )
+
+[0;31mTypeError[0m: first argument must be an iterable of pandas objects, you passed an object of type "DataFrame"
+TypeError: first argument must be an iterable of pandas objects, you passed an object of type "DataFrame"
+
