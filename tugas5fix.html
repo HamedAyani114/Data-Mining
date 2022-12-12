@@ -164,6 +164,11 @@ const thebe_selector_output = ".output, .cell_output"
    Tugas 9 (Studi Kasus Kredit Score meggunakan Ensemble Stacking)
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="UAS_prediksitanahtanaman.html">
+   UAS (Prediksi Kecocokan Tanah untuk Tanaman)
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -503,7 +508,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-7bb290ff-a12f-4576-8de6-c104a38708b2">
+  <div id="df-b97b5051-01b1-44ef-b179-1d570de5c1cd">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -623,7 +628,7 @@ title="Print to PDF"
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-7bb290ff-a12f-4576-8de6-c104a38708b2')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-b97b5051-01b1-44ef-b179-1d570de5c1cd')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -674,12 +679,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-7bb290ff-a12f-4576-8de6-c104a38708b2 button.colab-df-convert');
+          document.querySelector('#df-b97b5051-01b1-44ef-b179-1d570de5c1cd button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-7bb290ff-a12f-4576-8de6-c104a38708b2');
+          const element = document.querySelector('#df-b97b5051-01b1-44ef-b179-1d570de5c1cd');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -713,7 +718,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-997d8c8e-b2dd-41b3-8527-466e11ccb0e6">
+  <div id="df-05b27dea-43f4-4a42-968c-bcba92dd7f79">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -833,7 +838,7 @@ title="Print to PDF"
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-997d8c8e-b2dd-41b3-8527-466e11ccb0e6')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-05b27dea-43f4-4a42-968c-bcba92dd7f79')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -884,12 +889,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-997d8c8e-b2dd-41b3-8527-466e11ccb0e6 button.colab-df-convert');
+          document.querySelector('#df-05b27dea-43f4-4a42-968c-bcba92dd7f79 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-997d8c8e-b2dd-41b3-8527-466e11ccb0e6');
+          const element = document.querySelector('#df-05b27dea-43f4-4a42-968c-bcba92dd7f79');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -970,16 +975,13 @@ title="Print to PDF"
 <h3>K-Means Model Accuracy<a class="headerlink" href="#k-means-model-accuracy" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#training accuracy</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">train_y</span><span class="p">,</span> <span class="n">train_labels</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span>
-<span class="c1">#testing accuracy</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#testing accuracy</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">test_labels</span><span class="p">,</span> <span class="n">test_y</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9.821428571428571
-94.73684210526315
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5.263157894736842
 </pre></div>
 </div>
 </div>
@@ -991,20 +993,27 @@ title="Print to PDF"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#classification report for training set </span>
-<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">train_y</span><span class="p">,</span> <span class="n">train_labels</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">test_labels</span><span class="p">,</span> <span class="n">test_y</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>              precision    recall  f1-score   support
 
-         0.0       0.00      0.00      0.00        50
-         1.0       0.00      0.00      0.00        50
-         2.0       1.00      0.92      0.96        12
+           0       0.00      0.00      0.00        36
+           2       0.05      1.00      0.10         2
 
-    accuracy                           0.10       112
-   macro avg       0.33      0.31      0.32       112
-weighted avg       0.11      0.10      0.10       112
+    accuracy                           0.05        38
+   macro avg       0.03      0.50      0.05        38
+weighted avg       0.00      0.05      0.01        38
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.8/dist-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/usr/local/lib/python3.8/dist-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/usr/local/lib/python3.8/dist-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
 </pre></div>
 </div>
 </div>

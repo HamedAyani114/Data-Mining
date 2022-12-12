@@ -13,7 +13,7 @@
 <g id="node1" class="node">
 <title>0</title>
 <polygon fill="none" stroke="#000000" points="472.5,-781 332.5,-781 332.5,-713 472.5,-713 472.5,-781"/>
-<text text-anchor="middle" x="402.5" y="-765.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">X[4] &lt;= 0.25</text>
+<text text-anchor="middle" x="402.5" y="-765.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">X[5] &lt;= 1.9</text>
 <text text-anchor="middle" x="402.5" y="-750.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.664</text>
 <text text-anchor="middle" x="402.5" y="-735.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 105</text>
 <text text-anchor="middle" x="402.5" y="-720.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [31, 37, 37]</text>
@@ -184,7 +184,7 @@
 <g id="node10" class="node">
 <title>9</title>
 <polygon fill="none" stroke="#000000" points="380,-157 265,-157 265,-89 380,-89 380,-157"/>
-<text text-anchor="middle" x="322.5" y="-141.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">X[4] &lt;= &#45;2.35</text>
+<text text-anchor="middle" x="322.5" y="-141.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">X[3] &lt;= 1.55</text>
 <text text-anchor="middle" x="322.5" y="-126.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.5</text>
 <text text-anchor="middle" x="322.5" y="-111.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 2</text>
 <text text-anchor="middle" x="322.5" y="-96.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 1, 1]</text>
@@ -201,7 +201,7 @@
 <polygon fill="none" stroke="#000000" points="313,-53 198,-53 198,0 313,0 313,-53"/>
 <text text-anchor="middle" x="255.5" y="-37.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
 <text text-anchor="middle" x="255.5" y="-22.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 1</text>
-<text text-anchor="middle" x="255.5" y="-7.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 1, 0]</text>
+<text text-anchor="middle" x="255.5" y="-7.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 0, 1]</text>
 </g>
 <!-- 9&#45;&gt;10 -->
 <g id="edge10" class="edge">
@@ -215,7 +215,7 @@
 <polygon fill="none" stroke="#000000" points="446,-53 331,-53 331,0 446,0 446,-53"/>
 <text text-anchor="middle" x="388.5" y="-37.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
 <text text-anchor="middle" x="388.5" y="-22.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 1</text>
-<text text-anchor="middle" x="388.5" y="-7.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 0, 1]</text>
+<text text-anchor="middle" x="388.5" y="-7.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 1, 0]</text>
 </g>
 <!-- 9&#45;&gt;11 -->
 <g id="edge11" class="edge">
@@ -241,7 +241,7 @@
 <g id="node16" class="node">
 <title>15</title>
 <polygon fill="none" stroke="#000000" points="596,-469 481,-469 481,-401 596,-401 596,-469"/>
-<text text-anchor="middle" x="538.5" y="-453.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">X[4] &lt;= &#45;1.7</text>
+<text text-anchor="middle" x="538.5" y="-453.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">X[0] &lt;= 5.95</text>
 <text text-anchor="middle" x="538.5" y="-438.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.5</text>
 <text text-anchor="middle" x="538.5" y="-423.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 2</text>
 <text text-anchor="middle" x="538.5" y="-408.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 1, 1]</text>
@@ -258,7 +258,7 @@
 <polygon fill="none" stroke="#000000" points="529,-357.5 414,-357.5 414,-304.5 529,-304.5 529,-357.5"/>
 <text text-anchor="middle" x="471.5" y="-342.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
 <text text-anchor="middle" x="471.5" y="-327.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 1</text>
-<text text-anchor="middle" x="471.5" y="-312.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 0, 1]</text>
+<text text-anchor="middle" x="471.5" y="-312.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 1, 0]</text>
 </g>
 <!-- 15&#45;&gt;16 -->
 <g id="edge16" class="edge">
@@ -272,7 +272,7 @@
 <polygon fill="none" stroke="#000000" points="662,-357.5 547,-357.5 547,-304.5 662,-304.5 662,-357.5"/>
 <text text-anchor="middle" x="604.5" y="-342.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
 <text text-anchor="middle" x="604.5" y="-327.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 1</text>
-<text text-anchor="middle" x="604.5" y="-312.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 1, 0]</text>
+<text text-anchor="middle" x="604.5" y="-312.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 0, 1]</text>
 </g>
 <!-- 15&#45;&gt;17 -->
 <g id="edge17" class="edge">
